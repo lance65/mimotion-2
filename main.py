@@ -112,7 +112,7 @@ def getBeijinTime():
                 msg_mi += main(user_mi, passwd_mi, min_1, max_1)
                 # print(msg_mi)
             if a:
-                push_wx(msg_mi)
+                push_wx(msg_mi, min_1, max_1)
             else:
                print("此次修改结果不推送")
     else:
@@ -236,14 +236,14 @@ def get_app_token(login_token):
     return app_token
 
 # 推送server
-def push_wx(desp=""):
+def push_wx(desp="", min_1, max_1):
     if sckey == 'NO':
         print(sckey == "NO")
         return
     else:
         server_url = f"https://sctapi.ftqq.com/{sckey}.send"
         params = {
-            "text": '【✍小米运动步数修改✍】',
+            "text": '【✍支付宝运动步数已修改✍】随机步数范围：' + str(min_1) + '~' + str(max_1),
             "desp": desp
         }
 
