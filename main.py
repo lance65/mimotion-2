@@ -141,6 +141,7 @@ def login(user, password):
         "token": "access"
     }
     r1 = requests.post(url1, data=data1, headers=headers, allow_redirects=False)
+    print(r1)
     location = r1.headers["Location"]
     try:
         code = get_code(location)
@@ -166,6 +167,7 @@ def login(user, password):
         "third_name": "email",
     }
     r2 = requests.post(url2, data=data2, headers=headers).json()
+    print(r2)
     login_token = r2["token_info"]["login_token"]
     # print("login_token获取成功！")
     # print(login_token)
