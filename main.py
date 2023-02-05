@@ -116,7 +116,7 @@ def getBeijinTime():
             else:
                print("此次修改结果不推送")
     else:
-        print("当前主人设置了0步数呢，本次不提交")
+        print("当前设置了0步数呢，本次不提交")
         return
 
 
