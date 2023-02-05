@@ -1,4 +1,4 @@
-# mimotion for email
+# mimotion
 
 
 # 小米运动刷步数For Email
@@ -62,12 +62,4 @@
 **5. 小米运动不会更新步数，只有关联的会同步！！！！！**
 
 **6. 请注意，账号不是 [小米账号]，而是 [小米运动] 的账号。**
-
-**7. 本人业余，东拼西凑机缘巧合做成的，反馈问题本人不会处理**
-
-
-
-## Star History
-
-[![Stargazers over time](https://starchart.cc/wearehere8/mimotion-for-email.svg)](https://starchart.cc/wearehere8/mimotion-for-email)
 
