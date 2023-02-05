@@ -45,7 +45,7 @@
 在main.py 约83-91行处修改计算方法
 
 
-## 六、参考名单<br><br>https://github.com/huangshihai/mimotion<br>https://github.com/xunichanghuan/mimotion<br>https://gitee.com/daenmax/zepp-millet-brush-steps/blob/master/sport.php
+## 六、参考名单<br><br>https://github.com/huangshihai/mimotion<br>https://github.com/xunichanghuan/mimotion<br>https://gitee.com/daenmax/zepp-millet-brush-steps/blob/master/sport.php<br>https://github.com/wearehere8/mimotion-for-email
 
 
 
