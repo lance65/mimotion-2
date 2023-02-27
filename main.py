@@ -221,12 +221,20 @@ def main(_user, _passwd, min_1, max_1):
     return result
 
 # 获取时间戳
-def get_time():
-    url = 'https://api.m.jd.com/client.action?functionId=queryMaterialProducts&client=wh5'
-    response = requests.get(url, headers=headers).json()
-    t = response['currentTime2']
-    return t
-
+# def get_time():
+#     url = 'https://api.m.jd.com/client.action?functionId=queryMaterialProducts&client=wh5'
+#     response = requests.get(url, headers=headers).json()
+#     t = response['currentTime2']
+#     return t
+def get_time(self):
+    try:
+        url = "http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp"
+        response = requests.get(url, headers=self.headers).json()
+        t = response["data"]["t"]
+        return t
+    except Exception as e:
+        print(e)
+        return
 
 # 获取app_token
 def get_app_token(login_token):
