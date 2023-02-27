@@ -226,7 +226,7 @@ def main(_user, _passwd, min_1, max_1):
 #     response = requests.get(url, headers=headers).json()
 #     t = response['currentTime2']
 #     return t
-def get_time(self):
+def get_time():
     try:
         url = "http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp"
         response = requests.get(url, headers=self.headers).json()
